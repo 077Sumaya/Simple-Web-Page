@@ -1,0 +1,147 @@
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.navbar {
+    overflow: hidden;
+    background: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    float: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    float: right;
+    color: #fff;
+    text-align: center;
+    padding: 20px 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: whitesmoke;
+    color: #111;
+}
+
+section {
+    height: 600px;
+    background: #0f8cbd;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.row {
+    position: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.card {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    position: center;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    font-family: arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+    padding: 5px 0;
+}
+
+.card button {
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="div-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+/* For desktop: */
+
+.div-1 {
+    width: 25%;
+}
+
+.div-2 {
+    width: 25%;
+}
+
+.div-3 {
+    width: 25%;
+}
+
+.div-4 {
+    width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+    /*/* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
